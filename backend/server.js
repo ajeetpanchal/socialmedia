@@ -30,7 +30,9 @@ app.use("/images",express.static(path.join(__dirname,"/public/images")));
 //link the router file to connect with frontend easily.
 //app.use(require("./routes/userroutes"));
 app.use("/post",postRoute);
-
+if(process.env.NODE_ENV=="production"){
+  app.use(express.static("fronend/build"))
+}
 app.use("/api/user", userroutes);
 app.use("/api/chat", chatroutes);
 app.use("/api/message", messageroutes);
