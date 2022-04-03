@@ -1,0 +1,13 @@
+.feed{
+    flex:6;
+    /* width: 70%; */
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    
+    /* position: sticky;
+    top: 50px; */
+}
+
+.feedWrapper{
+    padding:20px;
+}

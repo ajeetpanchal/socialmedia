@@ -1,0 +1,86 @@
+.modal__container {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.modal__container .modal__body {
+    position: relative;
+    background: #fff;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    .modal__container .modal__body {
+      padding: 1.4rem;
+      border-radius: 0.7rem;
+    }
+  }
+  
+.modal__container .modal__body form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .modal__body form .file {
+    display: none;
+  }
+  
+  .modal__body form .file__placeholder {
+    height: 100px;
+    width: 100%;
+    border: 5px dashed #999999;
+    color: #999999;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    border-radius: 4px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .modal__body form .file__placeholder {
+      height: 70px;
+    }
+  }
+  
+  .modal__body form .file__placeholder:hover {
+    border: 5px dashed #797979;
+    color: #797979;
+  }
+  
+  .modal__body form .file__placeholder h4 {
+    font-weight: bold;
+  }
+  
+  .modal__body form .file__placeholder h4 svg {
+    vertical-align: middle;
+  }
+  
+  .modal__body form .form__caption {
+    padding: 4px;
+    border-radius: 4px 12px;
+    background: #fff;
+    border: 1px solid #1b1b1b1e;
+    margin-bottom: 1rem;
+  }
+  .primary-insta-btn {
+    padding: 0.4rem 0;
+    background: #0095f6;
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  .modal__body form .primary-insta-btn svg {
+    vertical-align: middle;
+  }

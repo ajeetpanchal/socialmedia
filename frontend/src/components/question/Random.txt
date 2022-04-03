@@ -1,0 +1,49 @@
+{viewans.length > 0 ? (
+              <Stack>
+                {viewans.map((m) => (
+                  <Box
+                    key={m._id}
+                    boxShadow="xl"
+                    rounded="md"
+                    bg="white"
+                    border="1px"
+                    borderColor="black"
+                    px={2}
+                  >
+                    <Box borderBottom="1px" borderColor="#aeb4b6">
+                      <HStack spacing="5" borderBottom="2px solid grey.400">
+                        <Avatar
+                          name={m.user.name}
+                          src={m.user.pic}
+                          h="7"
+                          w="7"
+                        />
+                        <Text fontSize="lg" color="#171923" fontWeight="500">
+                          {m.user.name}
+                        </Text>
+                      </HStack>
+                    </Box>
+                    <Box>
+                      <Text>{m.content}</Text>
+                    </Box>
+                    <Box>
+                      <Button
+                        ml="1"
+                        bg="white"
+                        _hover={{
+                          bg: "white",
+                          borderColor: "none",
+                          outlineColor: "none",
+                        }}
+                        onClick={() => addlike(m._id)}
+                      >
+                        {icon}
+                        {like !== 0 ? like : m.upvotes.length}
+                      </Button>
+                    </Box>
+                  </Box>
+                ))}
+              </Stack>
+            ) : (
+              <Text>Be a first one to ans the question</Text>
+            )}

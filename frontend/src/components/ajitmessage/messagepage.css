@@ -1,0 +1,15 @@
+.chatepagediv {
+  border: 2px solid black;
+  height: 82.5vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+.searchfunctiondiv {
+  border: 2px solid red;
+  width: 17vw;
+}
+.chatdiv {
+  border: 2px solid blue;
+  width: 82.9vw;
+}

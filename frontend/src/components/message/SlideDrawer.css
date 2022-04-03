@@ -1,0 +1,10 @@
+.iconcontrol {
+  font-size: 18px;
+  width: 60px;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
